@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{409A5A09-AD98-422E-9F8B-7F8B35AD23FF}|Default">
+  <MonoDevelop.Ide.ItemProperties.GitStalker.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GitStalker/App.xaml.cs">
+    <Files>
+      <File FileName="GitStalker/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="GitStalker/MainPage.xaml" />
+      <File FileName="GitStalker/App.xaml" />
+      <File FileName="GitStalker/App.xaml.cs" Line="13" Column="24" />
+      <File FileName="GitStalker/SearchPage.xaml" />
+      <File FileName="GitStalker/SearchPage.xaml.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GitStalker" expanded="True">
+            <Node name="GitStalker" expanded="True">
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="SearchPage.xaml" expanded="True" />
+            </Node>
+            <Node name="GitStalker.Android" expanded="True" />
+            <Node name="GitStalker.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.GitStalker.Android FirstBuild="True" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.GitStalker FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>
