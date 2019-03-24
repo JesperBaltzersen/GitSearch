@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitStalker.iOS", "GitStalke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitStalker", "GitStalker\GitStalker.csproj", "{E36FE911-4999-405F-8796-209A2D85501D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{6508CA4C-8160-48B7-9425-8ED6DB08289D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,17 @@ Global
 		{E36FE911-4999-405F-8796-209A2D85501D}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{E36FE911-4999-405F-8796-209A2D85501D}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{E36FE911-4999-405F-8796-209A2D85501D}.Release|iPhone.Build.0 = Release|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{6508CA4C-8160-48B7-9425-8ED6DB08289D}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

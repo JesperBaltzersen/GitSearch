@@ -109,6 +109,7 @@ class MonoPackageManager_Resources {
 		"GitStalker.Android.dll",
 		"FormsViewGroup.dll",
 		"GitStalker.dll",
+		"Newtonsoft.Json.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

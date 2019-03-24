@@ -1,41 +1,60 @@
-﻿<Properties StartupConfiguration="{409A5A09-AD98-422E-9F8B-7F8B35AD23FF}|Default">
-  <MonoDevelop.Ide.ItemProperties.GitStalker.iOS FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GitStalker/App.xaml.cs">
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{1874177D-C45C-4478-8F17-0F87CBC3ECC6}|Default">
+  <MonoDevelop.Ide.ItemProperties.GitStalker.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.065C48D2-46BB-4B11-B9BF-5D7DD7E06C27" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GitStalker Status">
     <Files>
       <File FileName="GitStalker/MainPage.xaml.cs" Line="1" Column="1" />
       <File FileName="GitStalker/MainPage.xaml" />
       <File FileName="GitStalker/App.xaml" />
-      <File FileName="GitStalker/App.xaml.cs" Line="13" Column="24" />
+      <File FileName="GitStalker/App.xaml.cs" Line="13" Column="54" />
       <File FileName="GitStalker/SearchPage.xaml" />
-      <File FileName="GitStalker/SearchPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="GitStalker/SearchPage.xaml.cs" Line="12" Column="35" />
+      <File FileName="Tests/GitUsers.json" Line="39" Column="64" />
+      <File FileName="GitStalker/Services/DownloadService.cs" Line="15" Column="10" />
+      <File FileName="GitStalker/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="GitStalker/Services/GitUserFetcher.cs" Line="23" Column="48" />
+      <File FileName="GitStalker/Services/IDownloadService.cs" Line="7" Column="21" />
+      <File FileName="GitStalker/Services/IGitUserFetcher.cs" Line="9" Column="26" />
+      <File FileName="GitStalker/Models/GitUserSearchResponse.cs" Line="13" Column="38" />
+      <File FileName="Tests/packages.config" Line="1" Column="1" />
+      <File FileName="GitStalker/Models/GitUser.cs" Line="5" Column="21" />
+      <File FileName="Tests/Test.cs" Line="29" Column="5" />
+      <File FileName="GitStalker Status" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GitStalker" expanded="True">
             <Node name="GitStalker" expanded="True">
-              <Node name="App.xaml" expanded="True">
-                <Node name="App.xaml.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
-              <Node name="SearchPage.xaml" expanded="True" />
+              <Node name="SearchPage.xaml" expanded="True" selected="True" />
             </Node>
-            <Node name="GitStalker.Android" expanded="True" />
-            <Node name="GitStalker.iOS" expanded="True" />
+            <Node name="Tests" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="GitStalker" expanded="True" selected="True">
+            <Node name="Tests" expanded="True" />
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.GitStalker.Android FirstBuild="True" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.ItemProperties.GitStalker.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.Light.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.my_device" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker/Services/GitUserFetcher.cs" relfile="GitStalker/Services/GitUserFetcher.cs" line="21" column="1" />
+      <Breakpoint file="/Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker/Services/GitUserFetcher.cs" relfile="GitStalker/Services/GitUserFetcher.cs" line="23" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.GitStalker FirstBuild="True" />
   <MultiItemStartupConfigurations />
 </Properties>

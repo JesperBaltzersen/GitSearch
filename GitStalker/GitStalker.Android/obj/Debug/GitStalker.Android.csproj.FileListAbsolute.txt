@@ -36,6 +36,7 @@
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/obj/Debug/uploadflags.txt
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/bin/Debug/FormsViewGroup.pdb
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/bin/Debug/Mono.Android.pdb
+/Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/bin/Debug/Newtonsoft.Json.pdb
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/bin/Debug/Xamarin.Forms.Core.pdb
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/bin/Debug/Xamarin.Forms.Platform.Android.pdb
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/bin/Debug/Xamarin.Forms.Xaml.pdb
@@ -43,6 +44,7 @@
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/obj/Debug/linksrc/FormsViewGroup.pdb
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/obj/Debug/linksrc/GitStalker.pdb
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/obj/Debug/linksrc/Mono.Android.pdb
+/Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/obj/Debug/linksrc/Newtonsoft.Json.pdb
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/obj/Debug/linksrc/Xamarin.Forms.Core.pdb
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/obj/Debug/linksrc/Xamarin.Forms.Platform.Android.pdb
 /Users/jesperbaltzersen/development/StalkGithub/GitStalker/GitStalker.Android/obj/Debug/linksrc/Xamarin.Forms.Xaml.pdb

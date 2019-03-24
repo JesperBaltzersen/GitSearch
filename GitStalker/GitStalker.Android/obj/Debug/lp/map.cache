@@ -1,6 +1,7 @@
-GitStalker
-System.Runtime
 FormsViewGroup
+GitStalker
+Newtonsoft.Json
+System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime
