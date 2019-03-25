@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace GitStalker.iOS
+namespace GitStalker.ViewModels.iOS
 {
     public class Application
     {
