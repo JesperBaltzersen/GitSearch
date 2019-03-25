@@ -9,7 +9,7 @@ namespace GitStalker.Services
     public class GitUserFetcher : IGitUserFetcher
     {
         private IDownloadService _downloadService;
-        private readonly string BASEURL = "https://api.github.com/users/";
+        private readonly string BASEURL = "https://api.github.com/search/users?q=";
 
         public GitUserFetcher(IDownloadService downloadService)
         {
