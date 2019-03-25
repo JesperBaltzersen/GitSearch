@@ -37,7 +37,7 @@
                 <Image Source="{Binding ImageSource}" Grid.Row="0" Grid.Column="0" />
                 <Label Text="{Binding Username}" FontSize="Large" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" TextColor="{StaticResource textColor}" Grid.ColumnSpan="2"/>
                 <Label Text="{Binding Score}" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="1" TextColor="{StaticResource textColor}"/>
-                <Button Command="{Binding VisitOnGithubCommand}" BorderColor="White" BorderWidth="2" Text="Visit on Github" FontSize="Large" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" TextColor="{StaticResource textColor}"/>
+                <Button Command="{Binding VisitOnGithubCommand}" BorderColor="White" BackgroundColor="Transparent" BorderWidth="2" Text="Visit on Github" FontSize="Large" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" TextColor="{StaticResource textColor}"/>
             </Grid>
             
             <ListView IsVisible="{Binding ShowList}" ItemsSource="{Binding GitUsers}" SelectedItem="{Binding SelectedUser}" SeparatorColor="Transparent" BackgroundColor="Transparent">
