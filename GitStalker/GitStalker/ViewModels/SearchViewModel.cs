@@ -15,7 +15,6 @@ namespace GitStalker.ViewModels
         private readonly string GithubUserBaseUrl = "https://github.com/";
 
         public ObservableRangeCollection<GitUser> GitUsers { get; set; }
-        public GitUser CurrentUser { get; set; }
 
         public SearchViewModel(GitUserFetcher gitUserFetcher)
         {
@@ -28,8 +27,6 @@ namespace GitStalker.ViewModels
 
             VisitOnGithubCommand = new Command<string>(
                 async (_) => await VisitOnGithub());
-
-
         }
 
         public Command<string> SearchGithubUserCommand { get;}
@@ -105,19 +102,5 @@ namespace GitStalker.ViewModels
             get => _showList;
             set => SetProperty(ref _showList, value);
         }
-        //public string Username
-        //{
-        //    get => SelectedUser.login;
-        //    set => Username = value;
-        //}
-
-        //void OnUserSelected(GitUser sender, SelectedItemChangedEventArgs e)
-        //{
-        //    var chosenUser = e.SelectedItem as GitUser;
-        //    if (chosenUser != null)
-        //    {
-        //        CurrentUser = chosenUser;
-        //    }
-        //}
     }
 }
