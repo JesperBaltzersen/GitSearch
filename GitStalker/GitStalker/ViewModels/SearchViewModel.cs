@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using GitStalker.Models;
 using GitStalker.Services;
 using MvvmHelpers;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace GitStalker.ViewModels
@@ -11,6 +12,7 @@ namespace GitStalker.ViewModels
     public class SearchViewModel : BaseViewModel
     {
         private readonly GitUserFetcher _gitUserFetcher;
+        private readonly string GithubUserBaseUrl = "https://github.com/";
 
         public ObservableRangeCollection<GitUser> GitUsers { get; set; }
         public GitUser CurrentUser { get; set; }
@@ -19,14 +21,13 @@ namespace GitStalker.ViewModels
         {
             GitUsers = new ObservableRangeCollection<GitUser>();
             _gitUserFetcher = gitUserFetcher;
+
             SearchGithubUserCommand = new Command<string>(
                 async (x) => await SearchGithubUser(x), 
                 (_) => !IsBusy);
 
-            //GitUsers.CollectionChanged += (sender, e) => 
-            //{
-            //    Debug.WriteLine($"Item {e.Action}"); 
-            //};
+            VisitOnGithubCommand = new Command<string>(
+                async (_) => await VisitOnGithub());
 
 
         }
@@ -36,18 +37,87 @@ namespace GitStalker.ViewModels
         {
             IsBusy = true;
             var users = await _gitUserFetcher.GetUsersFromNameAsync(name);
-            GitUsers.AddRange(users);
+            GitUsers.ReplaceRange(users);
+            ShowGrid = false;
             IsBusy = false;
+            ShowList = true;
+        }
 
-        }   
 
-        void OnUserSelected(GitUser sender, SelectedItemChangedEventArgs e)
+        public Command<string> VisitOnGithubCommand { get; }
+        async Task VisitOnGithub()
         {
-            var chosenUser = e.SelectedItem as GitUser;
-            if (chosenUser != null)
+            await Browser.OpenAsync(GithubUserBaseUrl + SelectedUser.login, BrowserLaunchMode.SystemPreferred);
+        }
+
+        GitUser _selectedtUser;
+        public GitUser SelectedUser 
+        {
+            get
             {
-                CurrentUser = chosenUser;
+                return _selectedtUser;
+            }
+            set
+            {
+                SetProperty(ref _selectedtUser, value);
+                Username = value?.login;
+                ImageSource = value?.avatar_url;
+               
+                Score = "Score : " + Convert.ToInt32(value?.score).ToString();
+                if (_selectedtUser != null)
+                {
+                    ShowGrid = true;
+                }
             }
         }
+
+        string _username;
+        public string Username 
+        { 
+            get => _username ?? ""; 
+            set => SetProperty(ref _username, value); 
+        }
+
+        string _imageSource;
+        public string ImageSource
+        {
+            get => _imageSource ?? "";
+            set => SetProperty(ref _imageSource, value);
+        }
+
+        string _score;
+        public string Score
+        {
+            get => _score ?? "";
+            set => SetProperty(ref _score, value);
+        }
+
+        bool _showGrid;
+        public bool ShowGrid
+        {
+            get => _showGrid;
+            set => SetProperty(ref _showGrid, value);
+        }
+
+        bool _showList;
+        public bool ShowList
+        {
+            get => _showList;
+            set => SetProperty(ref _showList, value);
+        }
+        //public string Username
+        //{
+        //    get => SelectedUser.login;
+        //    set => Username = value;
+        //}
+
+        //void OnUserSelected(GitUser sender, SelectedItemChangedEventArgs e)
+        //{
+        //    var chosenUser = e.SelectedItem as GitUser;
+        //    if (chosenUser != null)
+        //    {
+        //        CurrentUser = chosenUser;
+        //    }
+        //}
     }
 }

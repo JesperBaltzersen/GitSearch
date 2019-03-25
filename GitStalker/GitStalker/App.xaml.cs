@@ -11,7 +11,7 @@ namespace GitStalker
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new SearchPage());
+            MainPage = new NavigationPage(new SearchPage()) { BarBackgroundColor = (Color) Application.Current.Resources["barColor"], BarTextColor = (Color) Application.Current.Resources["textColor"]};
         }
 
         protected override void OnStart()
