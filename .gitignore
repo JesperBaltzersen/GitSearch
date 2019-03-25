@@ -3,8 +3,8 @@
 # Edit at https://www.gitignore.io/?templates=visualstudio,xamarinstudio
 
 ### XamarinStudio ###
-**/bin/
-**/obj/
+GitStalker/GitStalker.iOS/bin/
+GitStalker/GitStalker.iOS/obj/
 GitStalker/GitStalker.Android/bin/
 GitStalker/GitStalker.Androdi/obj/
 obj/
