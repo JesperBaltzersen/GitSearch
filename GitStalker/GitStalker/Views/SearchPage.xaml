@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="GitStalker.ViewModels.SearchPage"
              Title="Search Github"
-             BackgroundColor="{StaticResource backgroundColor}"
-             >
+             BackgroundColor="{StaticResource backgroundColor}">
     <ContentPage.Resources>
 
     </ContentPage.Resources>
@@ -22,7 +21,11 @@
                        ReturnCommandParameter="{Binding Source={x:Reference UserNameEntry}, Path=Text}"
                        WidthRequest="200"
                        IsEnabled="{Binding IsNotBusy}" />
-                <ActivityIndicator TranslationX="-75.00" WidthRequest="20" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" Color="{StaticResource textColor}"/>    
+                <ActivityIndicator TranslationX="-75.00"
+                  WidthRequest="20"
+                  IsVisible="{Binding IsBusy}"
+                  IsRunning="{Binding IsBusy}"
+                  Color="{StaticResource textColor}"/>    
             </StackLayout>
             
             <Grid Padding="10,0,10,0" IsVisible="{Binding ShowGrid}" >
@@ -34,20 +37,38 @@
                     <ColumnDefinition Width="150"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="{Binding ImageSource}" Grid.Row="0" Grid.Column="0" />
-                <Label Text="{Binding Username}" FontSize="Large" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" TextColor="{StaticResource textColor}" Grid.ColumnSpan="2"/>
-                <Label Text="{Binding Score}" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="1" TextColor="{StaticResource textColor}"/>
-                <Button Command="{Binding VisitOnGithubCommand}" BorderColor="White" BorderWidth="2" Text="Visit on Github" FontSize="Large" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" TextColor="{StaticResource textColor}"/>
+                
+                <Image Source="{Binding ImageSource}" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="{Binding Score}" Grid.Row="0" Grid.Column="1"
+                  FontSize="Large"
+                  FontAttributes="Bold"
+                  HorizontalTextAlignment="Center"
+                  TextColor="{StaticResource textColor}"/>
+                <Button Text="Visit on Github" Command="{Binding VisitOnGithubCommand}" Grid.Row="0" Grid.Column="1"
+                  BorderColor="White"
+                  BorderWidth="2"
+                  FontSize="Large"
+                  FontAttributes="Bold"
+                  TextColor="{StaticResource textColor}"/>
+                 <Label Text="{Binding Username}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                  FontSize="Large"
+                  FontAttributes="Bold"
+                  TextColor="{StaticResource textColor}"/>
+                
             </Grid>
             
-            <ListView IsVisible="{Binding ShowList}" ItemsSource="{Binding GitUsers}" SelectedItem="{Binding SelectedUser}" SeparatorColor="Transparent" BackgroundColor="Transparent">
-            <ListView.ItemTemplate>
-                <DataTemplate>  
-                    <TextCell Text="{Binding login}" TextColor="{StaticResource textColor}" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
+            <ListView IsVisible="{Binding ShowList}"
+              ItemsSource="{Binding GitUsers}"
+              SelectedItem="{Binding SelectedUser}"
+              SeparatorColor="Transparent"
+              BackgroundColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>  
+                        <TextCell Text="{Binding login}"
+                          TextColor="{StaticResource textColor}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView> 
-                
             
         </StackLayout>
     </ContentPage.Content>
