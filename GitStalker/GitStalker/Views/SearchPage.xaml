@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="GitStalker.ViewModels.SearchPage"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
              Title="Search Github"
              BackgroundColor="{StaticResource backgroundColor}">
     <ContentPage.Resources>
@@ -30,7 +31,9 @@
             
             <Grid Padding="10,0,10,0" IsVisible="{Binding ShowGrid}" >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="150" />
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions >
@@ -38,22 +41,38 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 
-                <Image Source="{Binding ImageSource}" Grid.Row="0" Grid.Column="0"/>
+                <Image Source="{Binding ImageSource}" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="1"/>
                 <Label Text="{Binding Score}" Grid.Row="0" Grid.Column="1"
-                  FontSize="Large"
-                  FontAttributes="Bold"
-                  HorizontalTextAlignment="Center"
-                  TextColor="{StaticResource textColor}"/>
-                <Button Text="Visit on Github" Command="{Binding VisitOnGithubCommand}" Grid.Row="0" Grid.Column="1"
-                  BorderColor="White"
-                  BorderWidth="2"
-                  FontSize="Large"
-                  FontAttributes="Bold"
-                  TextColor="{StaticResource textColor}"/>
-                 <Label Text="{Binding Username}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
-                  FontSize="Large"
-                  FontAttributes="Bold"
-                  TextColor="{StaticResource textColor}"/>
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Start"
+                       TextColor="{StaticResource textColor}"/>
+                <Label Text="Repos: " Grid.Row="1" Grid.Column="1"
+                       FontSize="Large"
+                       TextColor="{StaticResource textColor}"
+                       HorizontalTextAlignment="Start"/>
+                <Button Text="Visit on Github" Command="{Binding VisitOnGithubCommand}" Grid.Row="2" Grid.Column="1"
+                        BorderColor="White"
+                        BorderWidth="2"
+                        FontSize="Small"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource textColor}"/>
+                <Label Text="{Binding Username}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="1"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       TextColor="{StaticResource textColor}"/>
+                <forms:AnimationView Grid.Row="3" Grid.Column="1"
+                        x:Name="animationView" 
+                        Animation="1902-star.json" 
+                        Loop="true" 
+                        AutoPlay="true"
+                        HeightRequest="30"
+                                     WidthRequest="30"
+                                     
+                        />
+                                     <!--IsVisible="true"
+                                     IsEnabled="true"
+                                     IsPlaying="true"-->
                 
             </Grid>
             

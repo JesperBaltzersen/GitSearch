@@ -1,5 +1,6 @@
 ﻿using System;
 using GitStalker.ViewModels;
+using GitStalker.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,9 @@ namespace GitStalker
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new SearchPage()) { BarBackgroundColor = (Color) Application.Current.Resources["barColor"], BarTextColor = (Color) Application.Current.Resources["textColor"]};
+            MainPage = new NavigationPage(new SearchPage()) { 
+                BarBackgroundColor = (Color) Application.Current.Resources["barColor"], 
+                BarTextColor = (Color) Application.Current.Resources["textColor"]};
         }
 
         protected override void OnStart()
